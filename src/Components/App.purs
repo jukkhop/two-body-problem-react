@@ -9,22 +9,22 @@ import Effect.Ref as Ref
 import React.Basic.DOM as R
 import React.Basic.Hooks (ReactComponent, component, element, fragment, useEffect, useState, (/\))
 import React.Basic.Hooks as React
-import Simulation.Constants (initialConsts)
+import Simulation.Constants (constants)
 import Simulation.Main as Simulation
 import Simulation.World (initialState)
 
 mkApp :: Effect (ReactComponent {})
 mkApp = do
-  constsRef <- Ref.new initialConsts
-  stateRef <- Ref.new (initialState initialConsts)
+  constsRef <- Ref.new constants
+  stateRef <- Ref.new (initialState constants)
   frameRef <- Ref.new Nothing
   numberInput <- mkNumberInput
 
   component "App" \props -> React.do
-    eccentricity /\ setEccentricity <- useState initialConsts.eccentricity
-    gravity /\ setGravity <- useState initialConsts.gravity
-    massRatio /\ setMassRatio <- useState initialConsts.massRatio
-    timeStep /\ setTimeStep <- useState initialConsts.timeStep
+    eccentricity /\ setEccentricity <- useState constants.eccentricity
+    gravity /\ setGravity <- useState constants.gravity
+    massRatio /\ setMassRatio <- useState constants.massRatio
+    timeStep /\ setTimeStep <- useState constants.timeStep
 
     let consts = { eccentricity, gravity, massRatio, timeStep }
 
