@@ -65,8 +65,8 @@ render dims ctx state = do
   stroke ctx
 
 renderOrigin :: Context2D -> Vector -> Effect Unit
-renderOrigin ctx origin = do
-  moveTo ctx (origin.x - 4.0) origin.y
-  lineTo ctx (origin.x + 4.0) origin.y
-  moveTo ctx origin.x (origin.y - 4.0)
-  lineTo ctx origin.x (origin.y + 4.0)
+renderOrigin ctx { x, y } = do
+  moveTo ctx (x - 4.0) y
+  lineTo ctx (x + 4.0) y
+  moveTo ctx x (y - 4.0)
+  lineTo ctx x (y + 4.0)
