@@ -18,7 +18,7 @@
     "bower": "^1.8.8",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.1",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^0.4.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "pulp": "^12.4.2",
@@ -33,7 +33,7 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.40.2",
     "webpack-bundle-analyzer": "^3.5.1",
-    "webpack-cli": "^3.3.9",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.8.1",
     "webpack-manifest-plugin": "^2.1.0",
     "webpack-subresource-integrity": "^1.3.3"
