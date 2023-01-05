@@ -18,7 +18,7 @@
     "bower": "^1.8.8",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.1",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^0.4.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "pulp": "^12.4.2",
